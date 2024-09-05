@@ -11,6 +11,9 @@ then
         case $resp in
                 sim | s | SIM )
                         echo "Você escolheu sim, instalando dependências..."
+                        pkg update
+                        curl -O https://raw.githubusercontent.com/w3irdguy/droidsploit/main/install.sh
+                        bash install.sh
                 ;;
                 não | nao | n | NÃO | NAO)
                         echo "Você escolheu não instalar as dependências, abortando instalação..."
