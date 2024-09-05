@@ -2,6 +2,7 @@
 default_directory="/data/data/com.termux/files/home"
 if [ $HOME == "$default_directory" ]
 then
+	read -p "O sistema pedira acesso a memória interna, aperte enter para prosseguir"
 	termux-setup-storage
 	read -p "Para continuar o programa seguir instalará algumas dependências obrigatórias para o uso, deseja continuar?(s/n)" resp
 	case $resp in
