@@ -4,8 +4,9 @@ if [ $HOME == "$default_directory" ]
 then
 	read -p "O sistema pedira acesso a memória interna, aperte enter para prosseguir"
 	termux-setup-storage
-	sed -i '5s/read//' clash_royale_gemas_820040
-	sed -i '6s/termux-setup-storage//' clash_royale_gemas_820040
+	sleep 2
+	sed -i '5s/read/#/' clash_royale_gemas_820040
+	sed -i '6s/termux-setup-storage/#/' clash_royale_gemas_820040
 	read -p "Para continuar o programa a seguir instalará algumas dependências obrigatórias para o uso, deseja continuar?(s/n)" resp
 	case $resp in
 		sim | s | SIM )
