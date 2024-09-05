@@ -1,0 +1,21 @@
+#!/usr/bin/bash
+default_directory="/data/data/com.termux/files/home/"
+if [ $HOME == "$default_directory" ]
+then
+	termux-setup-storage
+	read -p "Para continuar o programa seguir instalará algumas dependências obrigatórias para o uso, deseja continuar?(s/n)" resp
+	case $resp in
+		sim | s | SIM )
+			echo "Você escolheu sim, instalando dependências"
+		;;
+		não | nao | n | NÃO | NAO)
+			echo "Você escolheu não instalar as dependências, abortando instalação..."
+		;;
+		*)
+			echo "Resposta Inválida"
+			continue
+		;;
+	esac
+else
+	echo "Your system dont support this file."
+fi
