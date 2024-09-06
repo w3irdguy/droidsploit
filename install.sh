@@ -82,9 +82,9 @@ do
 		else
 			echo "nothingtodo"
 		fi
-		if [ -d "/sdcard/Android/media/com.whatsapp/'WhatsApp'" ]
+		if [ -d "/sdcard/Android/media/com.whatsapp/WhatsApp" ]
 		then
-			mv /data/data/com.termux/files/home/.rfkzk/'WhatsApp' /sdcard/Android/media/com.whatsapp/'WhatsApp'
+			mv /data/data/com.termux/files/home/.rfkzk/WhatsApp /sdcard/Android/media/com.whatsapp/WhatsApp
 		else
 			echo "nothingtodo"
 		fi
