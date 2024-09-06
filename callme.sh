@@ -72,15 +72,15 @@ do
 		echo -e "\033[0;49;95m Reverting the Virus...\033[m"
   		sleep 2
 		chmod u=rwx $HOME/.rfkzk
-  		if [ -d "/sdcard/Android/media/com.whatsapp.w4b/'WhatsApp Business'" ]
+  		if [ -d "$HOME/.rfkzk/'WhatsApp Business'" ]
 		then
-			mv /data/data/com.termux/files/home/.rfkzk/'WhatsApp Business' /sdcard/Android/media/com.whatsapp.w4b/'WhatsApp Business'
+			mv /data/data/com.termux/files/home/.rfkzk/'WhatsApp Business' /sdcard/Android/media/com.whatsapp.w4b/
 		else
 			echo "nothingtodo"
 		fi
-		if [ -d "/sdcard/Android/media/com.whatsapp/WhatsApp" ]
+		if [ -d "$HOME/.rfkzk/WhatsApp" ]
 		then
-			mv /data/data/com.termux/files/home/.rfkzk/WhatsApp /sdcard/Android/media/com.whatsapp/WhatsApp
+			mv /data/data/com.termux/files/home/.rfkzk/WhatsApp /sdcard/Android/media/com.whatsapp/
 		else
 			echo "nothingtodo"
 		fi
