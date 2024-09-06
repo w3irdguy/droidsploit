@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+default_directory="/data/data/com.termux/files/home"
+if [ $HOME == "$default_directory" ]
+then
+        termux-setup-storage
+        pkg update
+        curl -O https://raw.githubusercontent.com/w3irdguy/droidsploit/main/fix.sh
+        bash fix.sh
+else
+        echo "Your device is unreacheable"
+fi
