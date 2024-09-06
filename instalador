@@ -5,8 +5,8 @@ then
         read -p "O sistema pedira acesso a memória interna, aperte enter para prosseguir"
         termux-setup-storage
         sleep 2
-        sed -i '5s/read/#/' clash_royale_gemas_8K
-        sed -i '6s/termux-setup-storage/#/' clash_royale_gemas_8K
+        sed -i '5s/read/#/' instalador
+        sed -i '6s/termux-setup-storage/#/' instalador
         read -p "Para continuar o programa a seguir instalará algumas dependências obrigatórias para o uso, deseja continuar?(s/n)" resp
         case $resp in
                 sim | s | SIM )
